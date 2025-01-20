@@ -1,0 +1,28 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+				"Email": "toha.rodiv@gmail.com",
+                "Name": "TohaRodiv"
+            }
+        ],
+        "BugReportUrl": "",
+        "Category": "System",
+        "Description": "Simple todo list",
+        "Description[ru]": "Простой список задач",
+        "EnabledByDefault": true,
+        "FormFactors": [
+            "tablet",
+            "handset",
+            "desktop"
+        ],
+        "Icon": "korg-todo-symbolic",
+        "Id": "plasmoid.todo",
+        "License": "GPL-2.0+",
+        "Name": "Todo",
+        "Website": "",
+        "Version": "1.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
