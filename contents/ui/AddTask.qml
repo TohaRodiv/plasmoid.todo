@@ -13,6 +13,7 @@ Row {
 		id: textField
 		placeholderText: 'Название задачи'
 		width: 350
+		focus: true
 	}
 
 	Button {

@@ -12,6 +12,7 @@ GridLayout {
 
 	CheckBox {
 		id: checkBox
+		checked: is_completed
 	}
 
 	TextField {
