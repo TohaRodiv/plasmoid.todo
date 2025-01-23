@@ -8,7 +8,7 @@ Item {
 	property var task: null
 	property int taskIndex: -1
 	property int margins: 10
-	property int minimumWidth: 400
+	property int minimumWidth: 550
 
 	id: taskEditView
 

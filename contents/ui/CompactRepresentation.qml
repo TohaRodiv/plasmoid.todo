@@ -10,7 +10,7 @@ MouseArea {
 	onClicked: root.expanded = !wasExpanded
 
 	Kirigami.Icon {
-		source: "korg-todo-symbolic"
+		source: "view-calendar-list"
 		fallback: "view-refresh"
 		anchors.fill: parent
 	}
