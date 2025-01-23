@@ -15,10 +15,11 @@ GridLayout {
 		checked: isCompleted
 	}
 
-	TextField {
+	TextArea {
 		id: textField
 		text: name
 		Layout.fillWidth: true
+		color: 'white'
 	}
 
 	Button {
