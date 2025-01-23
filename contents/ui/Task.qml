@@ -7,11 +7,12 @@ import org.kde.kirigami as Kirigami
 
 
 GridLayout {
-	columns: 5
+	columns: 4
 	width: parent.width
 
 	CheckBox {
 		id: checkBox
+		checked: isCompleted
 	}
 
 	TextField {
@@ -21,23 +22,10 @@ GridLayout {
 	}
 
 	Button {
-		icon.source: "document-save-symbolic"
+		icon.source: "view-visible"
 
 		onClicked: {
-			const { TodoStorage } = TodoLogic
-			const storage = new TodoStorage(LocalStorage)
-
-			storage
-				.update(id, { title: textField.text, is_completed: checkBox.checked })
-				.then((task) => {
-					console.log('Task updated:', task);
-                })
-				.catch((error) => {
-                    console.error('Error updating task:', error);
-                });
-			
-			listModel.setProperty(index, 'name', textField.text);
-			listModel.setProperty(index, 'is_completed', checkBox.checked);
+			stackView.push(taskEditView, { task: model, taskIndex: index })
 		}
 	}
 

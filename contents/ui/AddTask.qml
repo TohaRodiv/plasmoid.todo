@@ -12,13 +12,13 @@ Row {
 	TextField {
 		id: textField
 		placeholderText: 'Название задачи'
-		width: 350
+		width: 445
 	}
 
 	Button {
 		id: button
 		text: 'Добавить'
-		width: 80
+		icon.source: 'gtk-add-symbolic'
 
 		onClicked: {
 			const { TodoStorage } = TodoLogic

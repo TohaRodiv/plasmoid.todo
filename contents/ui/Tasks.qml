@@ -9,7 +9,7 @@ PlasmaComponents3.ScrollView {
 	property alias model: listView.model
 
 	id: scrollView
-	width: 450
+	width: 550
 	height: 350
 	y: 50
 

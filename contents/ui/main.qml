@@ -18,18 +18,8 @@ PlasmoidItem {
 	Plasmoid.icon: "klipper-symbolic"
 
     compactRepresentation: CompactRepresentation {
-        property bool wasExpanded: false
-
-        onPressed: wasExpanded = root.expanded
-        onClicked: root.expanded = !wasExpanded
     }
 
     fullRepresentation: FullRepresentation {
-        Layout.minimumWidth: 460
-        Layout.preferredWidth: Kirigami.Units.gridUnit * 20
-
-        Layout.minimumHeight: Kirigami.Units.gridUnit * 10
-        Layout.maximumHeight: Kirigami.Units.gridUnit * 40
-        Layout.preferredHeight: implicitHeight
     }
 }
