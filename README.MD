@@ -15,5 +15,5 @@ cd ~/.local/share/plasma/plasmoids
 ```
 
 ```bash
-kpackagetool6 -r plasmoid.todo
+kpackagetool6 -i plasmoid.todo
 ```
